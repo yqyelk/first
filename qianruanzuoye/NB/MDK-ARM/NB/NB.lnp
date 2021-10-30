@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp.sp
+"nb\startup_stm32f411xe.o"
+"nb\main.o"
+"nb\stm32f4xx_it.o"
+"nb\stm32f4xx_hal_msp.o"
+"nb\stm32f4xx_hal_tim.o"
+"nb\stm32f4xx_hal_tim_ex.o"
+"nb\stm32f4xx_hal_uart.o"
+"nb\stm32f4xx_hal_rcc.o"
+"nb\stm32f4xx_hal_rcc_ex.o"
+"nb\stm32f4xx_hal_flash.o"
+"nb\stm32f4xx_hal_flash_ex.o"
+"nb\stm32f4xx_hal_flash_ramfunc.o"
+"nb\stm32f4xx_hal_gpio.o"
+"nb\stm32f4xx_hal_dma_ex.o"
+"nb\stm32f4xx_hal_dma.o"
+"nb\stm32f4xx_hal_pwr.o"
+"nb\stm32f4xx_hal_pwr_ex.o"
+"nb\stm32f4xx_hal_cortex.o"
+"nb\stm32f4xx_hal.o"
+"nb\stm32f4xx_hal_exti.o"
+"nb\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "NB\NB.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "NB.map" -o NB\NB.axf

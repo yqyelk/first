@@ -1,0 +1,25 @@
+--cpu=Cortex-M4.fp.sp
+"cut\startup_stm32f411xe.o"
+"cut\main.o"
+"cut\stm32f4xx_it.o"
+"cut\stm32f4xx_hal_msp.o"
+"cut\stm32f4xx_hal_tim.o"
+"cut\stm32f4xx_hal_tim_ex.o"
+"cut\stm32f4xx_hal_rcc.o"
+"cut\stm32f4xx_hal_rcc_ex.o"
+"cut\stm32f4xx_hal_flash.o"
+"cut\stm32f4xx_hal_flash_ex.o"
+"cut\stm32f4xx_hal_flash_ramfunc.o"
+"cut\stm32f4xx_hal_gpio.o"
+"cut\stm32f4xx_hal_dma_ex.o"
+"cut\stm32f4xx_hal_dma.o"
+"cut\stm32f4xx_hal_pwr.o"
+"cut\stm32f4xx_hal_pwr_ex.o"
+"cut\stm32f4xx_hal_cortex.o"
+"cut\stm32f4xx_hal.o"
+"cut\stm32f4xx_hal_exti.o"
+"cut\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "CUT\CUT.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "CUT.map" -o CUT\CUT.axf
